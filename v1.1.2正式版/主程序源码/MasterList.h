@@ -50,17 +50,17 @@ private:
     bool NumExist(MasterListNode*,string);
 public:
     MasterListNode head,tail;
-    void Input();                           //ÊäÈë³õÊ¼ÎÄ¼ş£¬Ê¹ÓÃÎÄ¼ş¶ÁÈë        
-    void Delete(string);                    //É¾³ı±àºÅÎª(string)µÄÖ÷ÈË                              
-    void Move(string,string);               //ÒÆ¶¯±àºÅÎª(string)µÄÖ÷ÈËÖÁ±àºÅÎª(string)µÄÖ÷ÈËÖ®ºó£¬ÓÃÓÚÖ÷ÈË»¨·ÑÅÅĞò                        
-    void AddInfo();                         //Ìí¼Ó±àºÅÎª(string)µÄÖ÷ÈË       
-    void SearchMasterName(string);          //²éÕÒ±àºÅÎª(string)µÄÖ÷ÈË       
-    void SearchMasterNum(string);           //²éÕÒÃû×ÖÎª(string)µÄÖ÷ÈË        
-    void MasterListSort();                  //°´ÕÕÖ÷ÈËµÄ»¨·Ñ½øĞĞÅÅĞò                                         
-    void PrintFile();                       //±£´æËùÓĞÖ÷ÈËĞÅÏ¢£¬ÒÔÎÄ¼şÊä³ö
-	void PrintFiletemp();                   //ÁÙÊ±´òÓ¡ÒÔ²éÑ¯È«²¿Ö÷ÈËĞÅÏ¢              
-    bool NumExist(string);                  //¼ì²é±àºÅÎª(string)µÄÖ÷ÈËÊÇ·ñ´æÔÚ        
-	string IsPetQuantity();                 //ÅĞ¶ÏËùÓĞÖ÷ÈËÊÇ·ñÓĞÖÁÉÙÒ»¸ö³èÎï£¬·µ»Ø-1»òÎŞ³èÎïµÄÖ÷ÈË±àºÅ 
+    void Input();                           //è¾“å…¥åˆå§‹æ–‡ä»¶ï¼Œä½¿ç”¨æ–‡ä»¶è¯»å…¥        
+    void Delete(string);                    //åˆ é™¤ç¼–å·ä¸º(string)çš„ä¸»äºº                              
+    void Move(string,string);               //ç§»åŠ¨ç¼–å·ä¸º(string)çš„ä¸»äººè‡³ç¼–å·ä¸º(string)çš„ä¸»äººä¹‹åï¼Œç”¨äºä¸»äººèŠ±è´¹æ’åº                        
+    void AddInfo();                         //æ·»åŠ ç¼–å·ä¸º(string)çš„ä¸»äºº       
+    void SearchMasterName(string);          //æŸ¥æ‰¾ç¼–å·ä¸º(string)çš„ä¸»äºº       
+    void SearchMasterNum(string);           //æŸ¥æ‰¾åå­—ä¸º(string)çš„ä¸»äºº        
+    void MasterListSort();                  //æŒ‰ç…§ä¸»äººçš„èŠ±è´¹è¿›è¡Œæ’åº                                         
+    void PrintFile();                       //ä¿å­˜æ‰€æœ‰ä¸»äººä¿¡æ¯ï¼Œä»¥æ–‡ä»¶è¾“å‡º
+	void PrintFiletemp();                   //ä¸´æ—¶æ‰“å°ä»¥æŸ¥è¯¢å…¨éƒ¨ä¸»äººä¿¡æ¯              
+    bool NumExist(string);                  //æ£€æŸ¥ç¼–å·ä¸º(string)çš„ä¸»äººæ˜¯å¦å­˜åœ¨        
+	string IsPetQuantity();                 //åˆ¤æ–­æ‰€æœ‰ä¸»äººæ˜¯å¦æœ‰è‡³å°‘ä¸€ä¸ªå® ç‰©ï¼Œè¿”å›-1æˆ–æ— å® ç‰©çš„ä¸»äººç¼–å· 
     
     MasterList()
     {
@@ -151,7 +151,7 @@ void MasterList::PrintFiletemp()
 		fileouttwotemp << " " << Temp->allCost << endl;
 	}
 	fileouttwotemp.close();
-	system("temp2.txt");
+	system("temp\\temp2.txt");
 }
 
 void MasterList::Delete(MasterListNode* &Temp,string Num)
